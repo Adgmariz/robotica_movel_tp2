@@ -1,0 +1,13 @@
+Primeira dificuldade: conseguir criar o mapa
+Segunda dificuldade: entender como conseguir as coordenadas dos vértices dos obstáculos
+Primeira tentativa foi posicionar sistemas de coordenadas(ReferenceFrame) nas bordas da parede e 
+calcular a diferença. Descobri a escala 0.2m para parede de 1px. Para parede de 2px a escala, a 
+largura foi 0.3m, mas considerei a escala como 1px=0.2m. Posicionei um outro ReferenceFrame no
+ponto que eu quero considerar como 0,0(pixel 0 na imagem geradora) e percebi que ao gerar o mapa
+precisava ter cuidado com a escala. Defini usar um mapa 80x80 com escala x=y=8m.
+Com isso, 1px deveria ser equivalente a 0,1m, mas a largura que medi da parede gerada foi 0,2m.
+
+
+Talvez o pixel seja o centro da parede(a parede é uma forma triangular, piramidal) e o 0.1m seja
+a diferença do centro da parede ao chão. Mas ainda assim a conta não fecha. Não entendi essa parte
+do simulador, então prossegui com a escala 0.2m/px.
