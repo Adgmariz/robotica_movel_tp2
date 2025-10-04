@@ -8,6 +8,6 @@ precisava ter cuidado com a escala. Defini usar um mapa 80x80 com escala x=y=8m.
 Com isso, 1px deveria ser equivalente a 0,1m, mas a largura que medi da parede gerada foi 0,2m.
 
 
-Talvez o pixel seja o centro da parede(a parede é uma forma triangular, piramidal) e o 0.1m seja
-a diferença do centro da parede ao chão. Mas ainda assim a conta não fecha. Não entendi essa parte
-do simulador, então prossegui com a escala 0.2m/px.
+Talvez o pixel da imagem seja o centro da parede(a parede é uma forma triangular, piramidal)
+e o 0.1m sejaa diferença do centro da parede ao chão. Mas ainda assim a conta não fecha. Não 
+entendi essa partedo simulador, então prossegui com a escala 0.2m/px.
